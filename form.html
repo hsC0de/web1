@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WEB1 - form</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <h1><a href="index.html">WEB</a></h1>
+    <ol>
+      <li><a href="1.html">HTML</a></li>
+      <li><a href="2.html">CSS</a></li>
+      <li><a href="3.html">JavaScript</a></li>
+      <li><a href="table.html">table</a></li>
+      <li><a href="form.html">form</a></li>
+    </ol>
+    <h2>form</h2>
+    <form action="http://127.0.0.1:5500/login.html">
+      <p>text : <input type="text" name="id" value="default value" /></p>
+      <p>password : <input type="password" name="pwd" /></p>
+      <p>textarea : <textarea cols="50" rows="2">default value</textarea></p>
+      <p>
+        select :
+        <select name="color">
+          <option value="red">붉은색</option>
+          <option value="black" selected>검은색</option>
+          <option value="blue">파란색</option>
+        </select>
+        <select name="color2" multiple>
+          <option value="red">붉은색</option>
+          <option value="black">검은색</option>
+          <option value="blue">파란색</option>
+        </select>
+      </p>
+      <p>
+        radio :
+        <input type="radio" name="color" />
+        <input type="radio" name="color" />
+        <input type="radio" name="color" />
+      </p>
+      <p>
+        radio2 :
+        <input type="radio" name="color2" />
+        <input type="radio" name="color2" />
+        <input type="radio" name="color2" value="1" />
+      </p>
+      <p>
+        checkbox :
+        <input type="checkbox" name="size" value="1" />
+        <input type="checkbox" name="size" />
+        <input type="checkbox" name="size" />
+      </p>
+      <p></p>
+      <input type="submit" value="전송" />
+    </form>
+  </body>
+</html>
