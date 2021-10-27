@@ -8,47 +8,60 @@
         background-color: red;
       }
     </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <input type="button" value="night" onclick="handleDayAndNight(this)" />
     <h1><a href="index.html">WEB</a></h1>
-    <ol>
-      <li><a href="1.html">HTML</a></li>
-      <li><a href="2.html">CSS</a></li>
-      <li><a href="3.html">JavaScript</a></li>
-      <li><a href="table.html">table</a></li>
-      <li><a href="button.html">button</a></li>
-      <li><a href="hidden.html">hidden</a></li>
-      <li><a href="list.html">list</a></li>
-      <li><a href="form.html">form</a></li>
-      <li><a href="form_label.html">form_label</a></li>
-      <li><a href="file.html">file</a></li>
-      <li><a href="practiceSelector.html">selector</a></li>
-    </ol>
-    <h2>form_label</h2>
-    <form action="http://127.0.0.1:5500/form_label.html" method="post">
-      <p>
-        <label for="id_txt">text :</label>
-        <input id="id_txt" type="text" name="id" value="defaultValue" />
-      </p>
-      <p>
-        <label for="password">password :</label>
-        <input id="password" type="password" name="pwd" required/>
-      </p>
-      <p>
-        <label>
-          textarea :
-          <textarea cols="50" rows="2">default value</textarea>
-        </label>
-      </p>
-      <p>
-        <label>
-          <input type="checkbox" name="color" value="red" />붉은색
-        </label>
-        <label for="color_blue">
-          <input id="color_blue" type="checkbox" name="color" value="blue" />파란색
-        </label>
-      </p>
-      <input type="submit">
-      
+    <div id="grid">
+      <ol>
+        <li><a href="1.html">HTML</a></li>
+        <li><a href="2.html">CSS</a></li>
+        <li><a href="3.html">JavaScript</a></li>
+        <li><a href="table.html">table</a></li>
+        <li><a href="button.html">button</a></li>
+        <li><a href="hidden.html">hidden</a></li>
+        <li><a href="list.html">list</a></li>
+        <li><a href="form.html">form</a></li>
+        <li><a href="form_label.html">form_label</a></li>
+        <li><a href="file.html">file</a></li>
+        <li><a href="grid.html">grid</a></li>
+        <li><a href="practiceSelector.html">selector</a></li>
+      </ol>
+      <div>
+        <h2>form_label</h2>
+        <form action="http://127.0.0.1:5500/form_label.html" method="post">
+          <p>
+            <label for="id_txt">text :</label>
+            <input id="id_txt" type="text" name="id" value="defaultValue" />
+          </p>
+          <p>
+            <label for="password">password :</label>
+            <input id="password" type="password" name="pwd" required />
+          </p>
+          <p>
+            <label
+              >textarea :
+              <textarea cols="50" rows="2">default value</textarea>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" name="color" value="red" />붉은색
+            </label>
+            <label for="color_blue">
+              <input
+                id="color_blue"
+                type="checkbox"
+                name="color"
+                value="blue"
+              />파란색
+            </label>
+          </p>
+          <input type="submit" />
+        </form>
+      </div>
+    </div>
+    <script src="app.js"></script>
   </body>
 </html>
