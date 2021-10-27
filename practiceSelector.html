@@ -10,6 +10,7 @@
         border: 1px solid black;
       }
     </style>
+    <link rel="stylesheet" href="style.css" />
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.6.0.slim.js"
@@ -18,56 +19,62 @@
     ></script>
   </head>
   <body>
+    <input type="button" value="night" onclick="handleDayAndNight(this)" />
     <h1><a href="index.html">WEB</a></h1>
-    <ol>
-      <li><a href="1.html">HTML</a></li>
-      <li><a href="2.html">CSS</a></li>
-      <li><a href="3.html">JavaScript</a></li>
-      <li><a href="table.html">table</a></li>
-      <li><a href="button.html">button</a></li>
-      <li><a href="hidden.html">hidden</a></li>
-      <li><a href="list.html">list</a></li>
-      <li><a href="form.html">form</a></li>
-      <li><a href="form_label.html">form_label</a></li>
-      <li><a href="file.html">file</a></li>
-      <li><a href="practiceSelector.html">selector</a></li>
-    </ol>
-    <h2>selector</h2>
-    <table>
-      <tr>
-        <th>Company</th>
-        <th>Name</th>
-        <th>Country</th>
-      </tr>
-      <tr>
-        <td>Alfreds Futterkiste</td>
-        <td>
-          <input name="name" type="text" value="해성" disabled />
-        </td>
-        <td>Germany</td>
-      </tr>
-      <tr>
-        <td>Centro comercial Moctezuma</td>
-        <td>
-          <input name="name" type="text" value="영희" disabled />
-        </td>
-        <td>Mexico</td>
-      </tr>
-    </table>
-    <button id="nameBtn" type="button">Name</button>
-    <!-- <div>
+    <div id="grid">
+      <ol>
+        <li><a href="1.html">HTML</a></li>
+        <li><a href="2.html">CSS</a></li>
+        <li><a href="3.html">JavaScript</a></li>
+        <li><a href="table.html">table</a></li>
+        <li><a href="button.html">button</a></li>
+        <li><a href="hidden.html">hidden</a></li>
+        <li><a href="list.html">list</a></li>
+        <li><a href="form.html">form</a></li>
+        <li><a href="form_label.html">form_label</a></li>
+        <li><a href="file.html">file</a></li>
+        <li><a href="grid.html">grid</a></li>
+        <li><a href="practiceSelector.html">selector</a></li>
+      </ol>
+      <div>
+        <h2>selector</h2>
+        <table>
+          <tr>
+            <th>Company</th>
+            <th>Name</th>
+            <th>Country</th>
+          </tr>
+          <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>
+              <input name="name" type="text" value="해성" disabled />
+            </td>
+            <td>Germany</td>
+          </tr>
+          <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>
+              <input name="name" type="text" value="영희" disabled />
+            </td>
+            <td>Mexico</td>
+          </tr>
+        </table>
+        <button id="nameBtn" type="button">Name</button>
+        <!-- <div>
       <span></span>
     </div> -->
-    <hr />
-    <div class="target">
-      <span>1번 span</span>
-      <span>2번 span</span>
-      <a>
-        <span>3번 span</span>
-      </a>
-    </div>
-    <div class="exam target">
-      <span>4번 span</span>
+        <hr />
+        <div class="target">
+          <span>1번 span</span>
+          <span>2번 span</span>
+          <a>
+            <span>3번 span</span>
+          </a>
+        </div>
+        <div class="exam target">
+          <span>4번 span</span>
+        </div>
+      </div>
     </div>
     <script>
       var input = $("input[name='name']").eq(1);
@@ -98,5 +105,6 @@
       span.css("color", "tomato");
       span1.css({ backgroundColor: "green", color: "white" });
     </script>
+    <script src="app.js"></script>
   </body>
 </html>
