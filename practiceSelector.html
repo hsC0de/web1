@@ -78,14 +78,7 @@
     </div>
     <script>
       var input = $("input[name='name']").eq(1);
-      // var targetSpan = $("div span").eq(0);
       var inputValue = input.val();
-      // var appendContentDiv = document.createElement("div");
-      // var appendContent = document.createElement("span");
-      // appendContentDiv.appendChild(appendContent);
-      // appendContent.innerText = inputValue;
-
-      // targetSpan.text(inputValue);
 
       function handleBtnClick() {
         var str = "";
@@ -99,7 +92,6 @@
       // nameBtn.on("click", handleBtnClick);
       $(document).on("click", "#nameBtn", handleBtnClick);
 
-      // var span = $(".target span");
       var span = $(".target > span");
       var span1 = $(".exam.target span");
       span.css("color", "tomato");
